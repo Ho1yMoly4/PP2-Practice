@@ -38,7 +38,7 @@ __________________________________
 
 #Calculating Time Differences
 
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 d1 = datetime(2026, 1, 1)
 d2 = datetime(2026, 1, 10)
