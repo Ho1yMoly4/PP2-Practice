@@ -1,28 +1,100 @@
 import re
+pattern = r"ab*"
+text = open("raw.txt","r")
+match = re.fullmatch(pattern,text)
+print(match)
 
-with open('raw.txt', 'r', encoding='utf-8') as f:
-    text = f.read()
 
-names = re.findall(r'\d+\.\n(.*?)\n', text)
-prices = re.findall(r'Стоимость\n([\d\s,]+)', text)
 
-total_3 = 0.0
-count = 0
 
-print("СПИСОК:")
-for i in range(len(prices)):
-    if count == 3:
-        break
-        
-    price_raw = prices[i].split('\n')[0].strip()
-    clean_num = price_raw.replace(' ', '').replace(',', '.')
 
-    if clean_num:
-        name = names[i].strip()
-        print(f"- {name}: {price_raw} тг")
-        
-        total_3 += float(clean_num)
-        count += 1
+import re
+pattern = r"ab{2,3}"
+text = open("raw.txt","r")
+match = re.fullmatch(pattern,text)
+print(match)
 
-print("-" * 20)
-print(f"ИТОГО ЗА 3 ТОВАРА: {total_3} тг")
+
+
+
+
+import re
+pattern = r"[a-z]_+[a-z]+"
+text = open("raw.txt","r")
+match = re.findall(pattern,text)
+print(match)
+
+
+
+
+import re
+pattern = r"[A-Z][a-z]+"
+text = open("raw.txt","r")
+match = re.findall(pattern , text)
+print(match)
+
+
+
+import re
+pattern = r"^a.*b$"
+text = open("raw.txt","r")
+match = re.fullmatch(pattern, text)
+print(match)
+
+
+
+
+import re
+
+text = open("raw.txt","r")
+result = re.sub(r"[ ,\.]", ":", text)
+
+print(result)
+
+
+
+
+import re
+
+text = open("raw.txt","r")
+
+result = re.sub(r"_([a-z])", lambda match: match.group(1).upper(), text)
+
+print(result)
+
+
+
+
+import re
+pattern = r"(?=[A-Z])"
+text = open("raw.txt","r")
+match = re.split(pattern , text)
+print(match)
+
+
+
+
+
+
+
+import re
+
+text = open("raw.txt","r")
+result = re.sub(r"(?<!^)(?=[A-Z])", " ", text)
+
+print(result)
+
+
+
+
+
+
+
+
+import re
+
+def camel_to_snake(text):
+    return re.sub(r"(?<!^)(?=[A-Z])", "_", text).lower()
+
+text = open("raw.txt","r")
+print(camel_to_snake(text))
