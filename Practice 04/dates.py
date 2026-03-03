@@ -38,7 +38,7 @@ __________________________________
 
 #Calculating Time Differences
 
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 d1 = datetime(2026, 1, 1)
 d2 = datetime(2026, 1, 10)
@@ -51,7 +51,7 @@ __________________________________
 
 #Working with Timezones
 
-from datetime import timezone, timedelta
+from datetime import timezone, timedelta, datetime
 
 tz = timezone(timedelta(hours=3))
 dt = datetime(2026, 1, 1, tzinfo=tz)
