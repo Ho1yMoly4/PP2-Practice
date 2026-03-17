@@ -7,4 +7,3 @@ with open("demofile.txt", "a") as f:
   
 
 f = open("myfile.txt", "x")
-
