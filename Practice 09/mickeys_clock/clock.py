@@ -54,7 +54,6 @@ def draw_clock(screen, cx, cy):
     if mickey_hand_original is None:
         load_images(screen.get_width(), screen.get_height())
 
-
     screen.blit(background, (0, 0))
 
     now = datetime.datetime.now()
@@ -66,4 +65,4 @@ def draw_clock(screen, cx, cy):
     minute_angle = -(minutes * 6)
     
     blit_rotate(screen, minute_hand_img, (cx, cy), minute_angle)
-    blit_rotate(screen, second_hand_img, (cx, cy), second_angle)
+    blit_rotate(screen, second_hand_img, (cx, cy), second_angle) 
