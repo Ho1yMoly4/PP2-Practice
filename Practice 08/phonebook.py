@@ -21,8 +21,8 @@ def find():
     conn.close()
 
 def add_bulk():
-    names = ['Alice', 'Bob', 'InvalidUser']
-    phones = ['87071112233', '87475556677', '12'] # 
+    names = ['Ramazan', 'Bekzat']
+    phones = ['87071112233', '87475556677']
     conn = get_connection()
     cur = conn.cursor()
     cur.execute("CALL insert_many(%s, %s)", (names, phones))
