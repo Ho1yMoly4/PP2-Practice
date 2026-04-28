@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Flex",
+        "score": 1528,
+        "distance": 786,
+        "coins": 12
+    },
+    {
+        "name": "Flex",
+        "score": 547,
+        "distance": 362,
+        "coins": 3
+    },
+    {
+        "name": "Flex",
+        "score": 432,
+        "distance": 140,
+        "coins": 3
+    },
+    {
+        "name": "Flex",
+        "score": 322,
+        "distance": 185,
+        "coins": 2
+    },
+    {
+        "name": "Ramazan",
+        "score": 265,
+        "distance": 177,
+        "coins": 2
+    },
+    {
+        "name": "Ramazan",
+        "score": 231,
+        "distance": 172,
+        "coins": 2
+    },
+    {
+        "name": "Ramazan",
+        "score": 191,
+        "distance": 82,
+        "coins": 1
+    },
+    {
+        "name": "Flex",
+        "score": 164,
+        "distance": 108,
+        "coins": 1
+    },
+    {
+        "name": "Ramazan",
+        "score": 130,
+        "distance": 149,
+        "coins": 0
+    }
+]
